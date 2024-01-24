@@ -10,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'test-env';
+  constructor() {
+    const apiUrl = process.env['APP_API_ENDPOINT'];
+    console.log(apiUrl);   
+  }
+
 }
